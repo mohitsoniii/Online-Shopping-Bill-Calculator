@@ -1,0 +1,87 @@
+<html>
+		<head>
+			  <title> Online Shopping Bill Calculator </title>
+			   <link rel="stylesheet" href="css\bill calc.css">
+			   <style>
+					backgroud{color:aquamarine}
+					body{
+							background-image: url("BG_image.jpg");
+							background-size: 69% 100%;
+							background-repeat: no-repeat;
+							background-position: center right;
+							}
+			   </style>			   
+		</head>
+		
+		<body>
+			<div id="test">
+				<table style="width:100%">
+				<h1>Online Shopping Bill Calculator</h1></tr>
+				<tr>
+					<td style="width:22%"><br><b>Item 1 Price:</b></td>
+					<td style="width:78%"><input id="item1" type="number" placeholder="enter price"></td>
+				</tr>
+				<tr>
+					<td><br><br><b>Item 2 Price: </b>
+					<td><input id="item2" type="number" placeholder="enter value"></td>
+				</tr>
+				<tr>
+					<td><br><br><b>Item 3 Price:</b></td>
+					<td><input id="item3" type="number" placeholder="enter value"></td>
+				</tr>
+				<tr>
+					<td><br><br><b>Item 4 Price:</b></td>
+					<td><input id="item4" type="number" placeholder="enter price"></td>
+				</tr>
+				<tr>
+					<td><button style="width:40% ; font-family: Times New Roman;  font-size:18px; "  type="button"  onclick="total()">Submit</button></td>
+				</tr>
+			<div>
+			  <tr>
+			  	<td><br></br><b>Total Amount:<b><br></br></td>
+			  	<td><input type="text" id="demo1" readonly></input></td>
+			  </tr>
+			  <tr>
+			  	<!-- <td><button>click here</button> -->
+			  </tr>
+			  <tr>
+							<td><p>(If Total Amount is greater then or
+				equal to 10000 then 20% discount is
+				applicable otherwise 10% discount is
+				applicable.)</p></td>
+			  </tr>
+			  <tr>
+				<td><br><b>Discount:<b></td>
+				<td><input id="demo3" type="text" placeholder="submit" readonly></input></td>
+			  </tr>
+			  <tr>
+				<td><br><br><b>Amount After Discount:<b></td>
+				<td><input id="demo2" type="text" placeholder="submit" readonly></input></td>
+			  </tr>
+			  <tr>
+				<td><br><br><b>SGST (5%) :</b></td>
+				<td><input id="demo4" type="text" placeholder="submit" readonly></input></td>
+			  </tr>
+			  <tr>
+				<td><br><br><b>CGST (5%) :</b></td>
+				<td><input id="demo5" type="text" placeholder="submit" readonly></input></td>
+			  </tr>
+			  <tr>
+				<td><br><br><b>Final Amount Payble:</b></td>
+				<td><input id="demo6" type="text" placeholder="submit" readonly></input></td>
+			  </tr>
+			  
+			  <script type="text/javascript" src="js\bill calc.js"></script>
+			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			  <script>
+				$(document).ready(function(){
+					$("button").click(function(){
+						$(this).hide(1000);
+					});
+				});
+			</script>
+			</table>
+		</div>
+	     </div>
+		</body>
+</html>

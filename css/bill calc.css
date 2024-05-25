@@ -1,0 +1,19 @@
+button[type=button]{
+					 	width:10%;
+						margin-top:20px;
+						padding:5px;
+						border:1px solid rgb(17, 32, 17);
+						box-sizing:border-box;
+						background-color:#58d442;
+						border-radius:10px;
+					}
+input[type=number]{
+					width:10%;
+					background-color:#BCE0F6;
+					border-radius:5px;
+					}
+input[type=text]{
+					width:10%;
+					background-color:#F5ABAB;
+					border-radius:5px;
+					}
